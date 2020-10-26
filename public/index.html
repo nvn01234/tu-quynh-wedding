@@ -1,80 +1,279 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="zxx">
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.24.0/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.24.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.24.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.24.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.24.0/firebase-storage.js"></script>
-    <script defer src="/__/firebase/7.24.0/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/7.24.0/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/7.24.0/firebase-performance.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+<head>
+    <meta charset="UTF-8">
+<!--    <meta name="description" content="Dreams Template">-->
+<!--    <meta name="keywords" content="Dreams, unica, creative, html">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tú & Quỳnh wedding</title>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css?v=3" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" />
+    <link rel="icon" href="img/icon/favicon.ico" type="image/png">
+    <style>
+        @media (min-width: 992px) {
+            #hero {
+                background-image: url('img/wedding/_NMT1744-crop.jpg');
+            }
         }
-      });
+
+        @media (max-width: 991px) {
+            #hero {
+                background-image: url('img/wedding/_NMT1744.JPG');
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-2">
+                    <div class="header__logo">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-9">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a href="#"><b>Thiệp mời</b></a></li>
+                            <li><a href="portfolio.html"><b>Ảnh cưới</b></a></li>
+                            <li><a href="maps.html"><b>Địa điểm</b></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-2 col-md-1">
+                    <div class="header__right">
+                        <div class="header__right__social">
+                        </div>
+                        <div class="header__right__search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="mobile-menu-wrap"></div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero set-bg text-drop-shadow" id="hero">
+        <div class="container-fluid">
+            <div class="hero__text">
+                <img src="img/icon/hi.png" alt="">
+                <h5>Wedding</h5>
+                <h2 style="font-family: 'iCiel Bambola'; text-transform: none; font-size: 72px">Tú <span style="font-size: 56px">&</span> Quỳnh</h2>
+                <p style="background: rgba(0,0,0,0.3); text-shadow: none;">Trang web này được tạo ra để thay cho tấm thiệp mời của <span class="us">chúng tôi</span>.
+                    <br>Rất hân hạnh được đón tiếp!
+                    </p>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Feature Section Begin -->
+    <section class="features spad" style="margin-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Ảnh Cưới</h2>
+                        <img src="img/icon/ti.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="feature__gallery">
+                <div class="grid-sizer"></div>
+                <a href="img/wedding/_NMT2366.JPG" data-lightbox="portfolio">
+                    <div class="fg__item photography set-bg" data-setbg="img/wedding/_NMT2366.JPG"></div>
+                </a>
+                <a href="img/wedding/_NMT1781.JPG" data-lightbox="portfolio">
+                    <div class="fg__item couple mid_item set-bg" data-setbg="img/wedding/_NMT1781.JPG"></div>
+                </a>
+                <a href="img/wedding/_NMT1150.JPG" data-lightbox="portfolio">
+                    <div class="fg__item music large_item set-bg" data-setbg="img/wedding/_NMT1150.JPG"></div>
+                </a>
+                <a href="img/wedding/_NMT2325.JPG" data-lightbox="portfolio">
+                    <div class="fg__item event large_item set-bg" data-setbg="img/wedding/_NMT2325.JPG"></div>
+                </a>
+                <a href="img/wedding/_NMT1953.JPG" data-lightbox="portfolio">
+                    <div class="fg__item honeymoon mid_item set-bg" data-setbg="img/wedding/_NMT1953.JPG"></div>
+                </a>
+                <a href="img/wedding/_NMT1198.JPG" data-lightbox="portfolio">
+                    <div class="fg__item photography set-bg" data-setbg="img/wedding/_NMT1198.JPG"></div>
+                </a>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="load__more">
+                            <a href="portfolio.html" class="primary-btn">Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Section End -->
+
+    <!-- Counter Section Begin -->
+    <div class="counter spad set-bg" data-setbg="img/counter-bg.jpg" id="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Đếm ngược</h2>
+                        <p>Hôn lễ sẽ được tổ chức vào lúc
+                            <b>10:00 ngày 09/11/2020</b></p>
+                        <img src="img/icon/ti.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="counter__item">
+                        <img src="img/icon/ci-1.png" alt="">
+                        <h2 class="counter_num raleway" id="counter-days">-</h2>
+                        <p>Ngày</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="counter__item">
+                        <img src="img/icon/ci-2.png" alt="">
+                        <h2 class="counter_num raleway" id="counter-hours">-</h2>
+                        <p>Giờ</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="counter__item">
+                        <img src="img/icon/ci-3.png" alt="">
+                        <h2 class="counter_num raleway" id="counter-minutes">-</h2>
+                        <p>Phút</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="counter__item">
+                        <img src="img/icon/ci-4.png" alt="">
+                        <h2 class="counter_num raleway" id="counter-seconds">-</h2>
+                        <p>Giây</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Counter Section End -->
+
+    <!-- Request Form Section Begin -->
+    <section class="request">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-7">
+                    <div class="request__form">
+                        <div class="section-title">
+                            <h2>Save our date</h2>
+                        </div>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-12 px-2 text-center">
+                                    <p>
+                                        Trân trọng kính mời <span id="name">bạn</span>
+                                        <br>
+                                        Tới tham dự bữa cơm thân mật mừng lễ thành hôn của <span class="us">chúng tôi</span>
+                                    </p>
+                                    <br>
+                                    <p style="font-size: 48px;">
+                                        <span style="font-family: 'iCiel Bambola'">Nguyễn Đắc Tú</span> <br>
+                                        <span style="color: red; font-size: 30px;">♥</span> <br>
+                                        <span style="font-family: 'iCiel Bambola'">Nguyễn Thị Quỳnh</span>
+                                    </p>
+                                    <br>
+                                    <div>
+                                        <p>Vào lúc</p>
+                                        <p>
+                                            <span style="font-family: Digital-7; font-size: 35px; color: red;">10:00</span>
+                                            <span style="font-size: 38px;">|</span>
+                                            <img src="img/Monday.png" alt="" height="30" style="margin-top:-16px">
+                                            <span style="font-size: 38px;">|</span>
+                                            <span style="font-family: 'UTM Trajan Pro Bold'; font-size: 30px; color: red;">09-11-2020</span>
+                                        </p>
+                                        <p>Tại</p>
+                                        <h3 style="font-family: 'UTM Trajan Pro Bold'; font-size: 30px; color: #626262;">TTTC CTM Xuân Phương</h3>
+                                        <p style="font-family: 'UTM Trajan Pro Bold'"><b>Số 255A Phương Canh, P. Phương Canh, Nam Từ Liêm, HN</b></p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 px-2 text-center">
+                                    <a href="maps.html"><button type="button" class="site-btn">Xem bản đồ</button></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Request Form Section End -->
+
+    <!-- Latest Blog Section Begin -->
+    <section class="latest spad">
+    </section>
+    <!-- Latest Blog Section End -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
+<script src="js/main.js?v=4"></script>
+    <script>
+        lightbox.option({
+            'wrapAround': true
+        });
+
+        $(function() {
+            $('#counter').countdown('2020/11/09 10:00:00', function(event) {
+                $('#counter-days').text(event.strftime('%D'));
+                $('#counter-hours').text(event.strftime('%H'));
+                $('#counter-minutes').text(event.strftime('%M'));
+                $('#counter-seconds').text(event.strftime('%S'));
+            });
+        })
     </script>
-  </body>
+</body>
+
 </html>
